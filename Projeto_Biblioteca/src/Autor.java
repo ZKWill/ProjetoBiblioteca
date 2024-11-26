@@ -3,13 +3,11 @@ public class Autor {
 	
 	private int codigo;
 	private String nome;
-	private String sobrenome;
 	
-	public Autor(int iCodigo, String iNome, String iSobrenome) {
+	public Autor(int iCodigo, String iNome) {
 		
 		this.codigo = iCodigo;
 		this.nome = iNome;
-		this.sobrenome = iSobrenome;
 		
 	}
 	
@@ -32,17 +30,6 @@ public class Autor {
 	public void SetNome(String iNome) {
 		
 		this.nome = iNome;
-		
-	}
-	
-	public String GetSobrenome() {
-		
-		return sobrenome;
-	}
-	
-	public void SetSobrenome(String iSobrenome) {
-		
-		this.sobrenome = iSobrenome;
 		
 	}
 	

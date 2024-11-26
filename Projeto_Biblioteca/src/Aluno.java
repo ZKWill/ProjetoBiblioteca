@@ -3,17 +3,19 @@ public class Aluno {
 	
 	private int numMatricula;
 	private String nome;
-	private String sobrenome;
 	private String dataNascimento;
+	private String telefone;
 	private String rg;
+	private String cpf;
 	
-	public Aluno (int iNumMatricula, String iNome, String iSobrenome, String iDataNascimento, String iRg) {
+	public Aluno (int iNumMatricula, String iNome, String iDataNascimento, String iTelefone, String iRg, String iCPF) {
 		
 		this.numMatricula = iNumMatricula;
 		this.nome = iNome;
-		this.sobrenome = iSobrenome;
 		this.dataNascimento = iDataNascimento;
+		this.telefone = iTelefone;
 		this.rg = iRg;
+		this.cpf = iCPF;
 		
 	}
 	
@@ -39,17 +41,6 @@ public class Aluno {
 		
 	}
 	
-	public String GetSobrenome() {
-		
-		return sobrenome;
-	}
-	
-	public void SetSobrenome(String iSobrenome) {
-		
-		this.sobrenome = iSobrenome;
-		
-	}
-	
 	public String GetDataNascimento() {
 		
 		return dataNascimento;
@@ -61,6 +52,17 @@ public class Aluno {
 		
 	}
 	
+	public String GetTelefone() {
+		
+		return telefone;
+	}
+	
+	public void SetTelefone(String iTelefone) {
+		
+		this.telefone = iTelefone;
+		
+	}
+	
 	public String GetRG() {
 		
 		return rg;
@@ -69,6 +71,17 @@ public class Aluno {
 	public void SetRG(String iRg) {
 		
 		this.rg = iRg;
+		
+	}
+	
+	public String GetCPF() {
+		
+		return cpf;
+	}
+	
+	public void SetCPF(String iCPF) {
+		
+		this.cpf = iCPF;
 		
 	}
 	

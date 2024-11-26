@@ -1,21 +1,15 @@
 
-public class Periodico {
-	
+public class Periodico extends Material{
+
 	private int issn;
-	private String titulo;
-	private int volume;
-	private int numEstante;
-	private int quantidadeEstoqueTotal;
-	private int quantidadeEstoqueDisponiveis;
+	private boolean emprestado;
 	
-	public Periodico(int iISSN, String iTitulo, int iVolume, int iNumEstante, int iQuantidadeEstoqueTotal, int iQuantidadeEstoqueDisponiveis) {
+	public Periodico(String iTitulo, int iAno, int iEdicao, int iNumEstante, String iNomeAutor, String iTipoMaterial,int iISSN) {
+		
+		super(iTitulo, iAno, iEdicao, iNumEstante, iNomeAutor, iTipoMaterial);
 		
 		this.issn = iISSN;
-		this.titulo = iTitulo;
-		this.volume = iVolume;
-		this.numEstante = iNumEstante;
-		this.quantidadeEstoqueTotal = iQuantidadeEstoqueTotal;
-		this.quantidadeEstoqueDisponiveis = iQuantidadeEstoqueDisponiveis;
+		this.emprestado = false;
 		
 	}
 	
@@ -30,59 +24,15 @@ public class Periodico {
 		
 	}
 	
-	public String GetTitulo() {
+	public boolean GetEmprestado() {
 		
-		return titulo;
+		return emprestado;
 	}
 	
-	public void SetTitulo(String iTitulo) {
+	public void SetEmprestado(boolean iEmprestado) {
 		
-		this.titulo = iTitulo;
+		this.emprestado = iEmprestado;
 		
-	}
-	
-	public int GetVolume() {
-		
-		return volume;
-	}
-	
-	public void SetVolume(int iVolume) {
-		
-		this.volume = iVolume;
-		
-	}
-	
-	public int GetNumEstante() {
-		
-		return numEstante;
-	}
-	
-	public void SetNumEstante(int iNumEstante) {
-		
-		this.numEstante = iNumEstante;
-		
-	}
-	
-	public int GetQuantidadeEstoqueTotal() {
-		
-		return quantidadeEstoqueTotal;
-	}
-	
-	public void SetQuantidadeEstoqueTotal(int iQuantidadeEstoqueTotal) {
-		
-		this.quantidadeEstoqueTotal = iQuantidadeEstoqueTotal;
-		
-	}
-	
-	public int GetQuantidadeEstoqueDisponiveis() {
-		
-		return quantidadeEstoqueDisponiveis;
-	}
-	
-	public void SetQuantidadeEstoqueDisponiveis(int iQuantidadeEstoqueDisponiveis) {
-		
-		this.quantidadeEstoqueDisponiveis = iQuantidadeEstoqueDisponiveis;
-		
-	}
+	}	
 	
 }
